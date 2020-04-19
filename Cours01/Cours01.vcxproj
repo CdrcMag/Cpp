@@ -118,11 +118,13 @@
     <ClCompile Include="Carre.cpp" />
     <ClCompile Include="fonctionsTest.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MotMystere.cpp" />
     <ClCompile Include="tableaux.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="carre.h" />
     <ClInclude Include="fonctionsTest.h" />
+    <ClInclude Include="MotMystere.h" />
     <ClInclude Include="tableaux.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

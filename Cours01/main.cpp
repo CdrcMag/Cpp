@@ -1,29 +1,103 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <string>
 
 #include "carre.h"
 #include "fonctionsTest.h"
 #include "tableaux.h"
-
+#include "MotMystere.h"
 
 using namespace std;
 
 
 int main()
 {
+	//--------------- mot mystère ----------------------------------------//
+	
+	////1. On récupère le mot
+	//string motRecu = "";
+	//string motMelange = "";
+	//string chaine;
+	//cout << "Veuillez entrer votre mot : " << endl;
+	//cin >> motRecu;
+
+	////2. On mélange le mot
+	//motMelange = melangerMot(motRecu);
+
+	////On efface la console
+	//system("CLS");
+
+	////3. On demande en boucle le mot jusqu'a ce qu'il soit bon.
+	//while (chaine != motRecu)
+	//{
+	//	cout << "Mot a trouver : " << motMelange << endl;
+
+	//	cout << "Quel est le mot ? " << endl;
+	//	cin >> chaine;
+	//	if (chaine == motRecu)
+	//	{
+	//		cout << "Bravo !" << endl;
+	//	}
+	//	else
+	//	{
+	//		system("CLS");
+	//		cout << "Non, on ne fait pas ca ici" << endl;
+	//		
+	//	}
+	//}
+	//--------------------------------------------------------------------//
 
 
+	//--------- Les fichiers --------------------------------------------------//
+	//string const nomFichier = "Fichiers/monFichier.txt";
+
+	////Ouerture du flux pour écrire
+	//ofstream monFlux(nomFichier.c_str(), ios::app);//Ouvre en mode append
+	//ofstream monFlux(nomFichier.c_str());//Recréer entièrement le fichier
+	////tellp pour récup la pos du pointeur
+	////seekp pour se déplacer
+	//if (monFlux) 
+	//{
+	//	monFlux << "Le seigneur des anneaux c'est sympa" << endl;
+
+	//}
+	//else
+	//{
+	//	cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
+	//}
+
+	////Trois façons de se déplacer : 
+	///*	flux.seekp(nombreCaracteres, ios::MODE);
+	//	- ios::beg -> pour se mettre au début du fichier
+	//	- ios::end -> pour se mettre à la fin du fichier
+	//	- ios:cur -> pour se mettre au niveau du curseur
+	//
+	//*/
 
 
+	//ifstream monFluxLecture(nomFichier);
+	////tellg pour récup la pos du pointeur
+	////seekg pour se déplacer
+	//if (monFluxLecture)
+	//{
+	//	string lineOne;
 
+	//	//A besoin de #include <string>
+	//	getline(monFluxLecture, lineOne);
 
+	//	cout << lineOne << endl;
 
+	//}
+	//else
+	//{
+	//	cout << "ERREUR de lecture" << endl;
+	//}
 
-
-
-
-
-
+	////Fermeture des flux
+	//monFlux.close();
+	//monFluxLecture.close();
+	//------------------------------------------------------------------------//
 
 
 
