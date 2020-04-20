@@ -82,10 +82,10 @@ CPersonnage::CPersonnage()
 
 CPersonnage::CPersonnage(int vie, int mana, string nomArme, int degats)
 {
-	this->m_vie = 20;
-	this->m_mana = 10;
-	this->m_nomArme = "Hache";
-	this->m_degatsArme = 12;
+	this->m_vie = vie;
+	this->m_mana = mana;
+	this->m_nomArme = nomArme;
+	this->m_degatsArme = degats;
 }
 
 //--- Destructeur ---//
