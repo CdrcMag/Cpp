@@ -1,13 +1,14 @@
 #include "CPersonnage.h"
 
 //------ Controle -------//
-void CPersonnage::toString()
+//Méthode constante, elle ne change aucune valeur membre, le mot clé 'const' est appiliqué à la fin de son prototype et ici
+void CPersonnage::toString() const
 {
-	cout << "------- Fiche de " << getNom() << " -------" << endl;
-	cout << "Vie : " << getVie() << endl;
-	cout << "Mana : " << getMana() << endl;
-	cout << "Nom de l'arme : " << getNomArme() << endl;
-	cout << "Degats : " << getDegatsArme() << endl;
+	cout << "------- Fiche de " << m_nom << " -------" << endl;
+	cout << "Vie : " << m_vie << endl;
+	cout << "Mana : " << m_mana << endl;
+	cout << "Nom de l'arme : " << m_arme.getNom() << endl;
+	cout << "Degats : " << m_arme.getDegats() << endl;
 	cout << "---------------------" << endl;
 }
 
@@ -27,43 +28,32 @@ void CPersonnage::setMana(int mana)
 	this->m_mana = mana;
 }
 
-void CPersonnage::setNomArme(string nom)
+void CPersonnage::setArme(string nom, int degats)
 {
-	this->m_nomArme = nom;
+	this->m_arme.setDegats(degats);
+	this->m_arme.setNom(nom);
 }
-
-void CPersonnage::setDegatsArmes(int degats)
-{
-	this->m_degatsArme = degats;
-}
-
 
 //----- Getters ---------//
-string CPersonnage::getNom()
+string CPersonnage::getNom() const
 {
 	return this->m_nom;
 }
 
-int CPersonnage::getVie()
+int CPersonnage::getVie() const
 {
 	return this->m_vie;
 }
 
-int CPersonnage::getMana()
+int CPersonnage::getMana() const
 {
 	return this->m_mana;
 }
 
-string CPersonnage::getNomArme()
+CArme CPersonnage::getArme() const
 {
-	return this->m_nomArme;
+	return this->m_arme;
 }
-
-int CPersonnage::getDegatsArme()
-{
-	return this->m_degatsArme;
-}
-
 
 //Fonction qui fait recevoir des degats au personnage courant
 void CPersonnage::recevoirDegats(int nbDegats)
@@ -79,7 +69,12 @@ void CPersonnage::recevoirDegats(int nbDegats)
 //Fonction qui attaque un personnage
 void CPersonnage::attaquer(CPersonnage &cible)
 {
-	cible.recevoirDegats(this->m_degatsArme);
+	cible.recevoirDegats(this->getArme().getDegats());
+}
+
+void CPersonnage::changerArme(string nomNouvelleArme, int degatsNouvelleArme)
+{
+	m_arme.changer(nomNouvelleArme, degatsNouvelleArme);
 }
 
 //Fonction qui régénère de la vie
@@ -93,13 +88,6 @@ void CPersonnage::boirePotionDeVie(int quantitePotion)
 	}
 }
 
-//Fonction qui permet de changer d'arme (nom et dégats)
-void CPersonnage::changerArme(string nomNouvelleArme, int degatsNouvelleArme)
-{
-	this->m_nomArme = nomNouvelleArme;
-	this->m_degatsArme = degatsNouvelleArme;
-}
-
 
 //Booléen qui retourne l'état du personnage
 bool CPersonnage::estVivant()
@@ -107,25 +95,34 @@ bool CPersonnage::estVivant()
 	return m_vie > 0;
 }
 
-//--- Constructeur ---//
-CPersonnage::CPersonnage()
+//--- Constructeurs ---//
+CPersonnage::CPersonnage() : m_nom("NomDeBase"), m_vie(100), m_mana(100), m_arme("", 0)
 {
-	this->m_nom = "";
-	this->m_vie = 0;
-	this->m_mana = 0;
-	this->m_nomArme = "";
-	this->m_degatsArme = 0;
+	
+}
+
+CPersonnage::CPersonnage(string nomArme, int degats) : m_nom("NomDeBase"), m_vie(100), m_mana(100), m_arme("", 0)
+{
+
+}
+
+
+//Constructeur qui ne prend que le nom du personnage en argument
+CPersonnage::CPersonnage(string nom) : m_nom(nom), m_vie(100), m_mana(100), m_arme("", 0)
+{
+
 }
 
 //Constructeur avec initialisation
-CPersonnage::CPersonnage(string nom, int vie, int mana, string nomArme, int degats)
+CPersonnage::CPersonnage(string nom, int vie, int mana, string nomArme, int degats) : m_arme(nomArme, degats)
 {
 	this->m_nom = nom;
 	this->m_vie = vie;
 	this->m_mana = mana;
-	this->m_nomArme = nomArme;
-	this->m_degatsArme = degats;
+	
 }
+
+
 
 //--- Destructeur ---//
 CPersonnage::~CPersonnage()

@@ -3,6 +3,8 @@
 #include <string>
 #include <iostream>
 
+#include "CArme.h"
+
 using namespace std;
 
 class CPersonnage
@@ -12,8 +14,7 @@ private:
 	string m_nom;
 	int m_vie;
 	int m_mana;
-	string m_nomArme;
-	int m_degatsArme;
+	CArme m_arme;
 
 public:
 
@@ -25,26 +26,26 @@ public:
 	bool estVivant();
 
 	//Controle
-	void toString();
+	void toString() const;
 
 	//Setters
 	void setNom(string);
 	void setVie(int);
 	void setMana(int);
-	void setNomArme(string);
-	void setDegatsArmes(int);
+	void setArme(string, int);
 
 
 	//Getters
-	string getNom();
-	int getVie();
-	int getMana();
-	string getNomArme();
-	int getDegatsArme();
+	string getNom() const;
+	int getVie() const;
+	int getMana() const;
+	CArme getArme() const;
 
 
 	//Constructeur
 	CPersonnage();
+	CPersonnage(string);
+	CPersonnage(string, int);
 	CPersonnage(string, int, int, string, int);
 
 	//Destructeur

@@ -9,6 +9,7 @@ void sautDeLigne();
 
 int main(void)
 {
+	
 	//Déclaration des personnages
 	CPersonnage Perso1("Olaf", 100, 50, "Hache", 20);
 	CPersonnage Perso2("Luigi", 80, 100, "Sceptre", 10);
@@ -36,7 +37,7 @@ int main(void)
 	//Le perso 2 change d'arme
 	cout << Perso2.getNom() << " change d'arme et a maintenant ";
 	Perso2.changerArme("Bazooka", 300);
-	cout << "un " << Perso2.getNomArme() << endl;
+	cout << "un " << Perso2.getArme().getNom() << endl;
 	sautDeLigne();
 
 	//Perso2 attaque Perso1
@@ -55,7 +56,8 @@ int main(void)
 	}
 	sautDeLigne();
 	//------------------------------------------------------------------------------//
-
+	
+	
 	system("pause");
 	return 0;
 }
