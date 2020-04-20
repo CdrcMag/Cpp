@@ -19,6 +19,7 @@ int main(void)
 
 	sautDeLigne();
 	
+	//--------------------- Début du combat ----------------------------------------//
 	cout << "Debut du combat" << endl;
 	sautDeLigne();
 
@@ -53,6 +54,7 @@ int main(void)
 		cout << Perso1.getNom() << " est mort !" << endl;
 	}
 	sautDeLigne();
+	//------------------------------------------------------------------------------//
 
 	system("pause");
 	return 0;
