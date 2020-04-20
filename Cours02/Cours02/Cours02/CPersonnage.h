@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -8,6 +9,7 @@ class CPersonnage
 {
 
 private:
+	string m_nom;
 	int m_vie;
 	int m_mana;
 	string m_nomArme;
@@ -22,7 +24,11 @@ public:
 	void changerArme(string, int);
 	bool estVivant();
 
+	//Controle
+	void toString();
+
 	//Setters
+	void setNom(string);
 	void setVie(int);
 	void setMana(int);
 	void setNomArme(string);
@@ -30,6 +36,7 @@ public:
 
 
 	//Getters
+	string getNom();
 	int getVie();
 	int getMana();
 	string getNomArme();
@@ -38,7 +45,7 @@ public:
 
 	//Constructeur
 	CPersonnage();
-	CPersonnage(int, int, string, int);
+	CPersonnage(string, int, int, string, int);
 
 	//Destructeur
 	~CPersonnage();
