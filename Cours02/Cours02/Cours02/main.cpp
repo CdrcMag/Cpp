@@ -8,7 +8,7 @@ int main(void)
 
 	CPersonnage Olaf;
 
-	
+	cout << Olaf.getMana() << endl;
 	
 
 	system("pause");

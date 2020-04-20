@@ -68,7 +68,7 @@ void CPersonnage::changerArme(string nomNouvelleArme, int degatsNouvelleArme)
 
 bool CPersonnage::estVivant()
 {
-
+	return true;
 }
 
 //--- Constructeur ---//
