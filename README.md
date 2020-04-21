@@ -24,3 +24,6 @@ Cours 02:
 
 Cours 03:
 - Surcharge des opérateurs
+- +, -, !=, ==
+- += (surcharge dans la classe)
+- Surcharge d'opérateur de flux <<
