@@ -1,6 +1,6 @@
-#Cours / révision c++
+# Cours / révision c++
 
-Cours 01 :
+## Cours 01 :
 - Input/Output
 - Types de base
 - Boucles / Conditions
@@ -11,7 +11,7 @@ Cours 01 :
 - Structurer les fichiers (.cpp, .h)
 - Exercices : Carré, croix, mot mystère
 
-Cours 02:
+## Cours 02:
 - Création d'une classe
 - Gérer les objets
 - Constructeurs / Destructeurs
@@ -22,13 +22,13 @@ Cours 02:
 - Imbrication d'objets (Un personnage a une arme)
 - Exercice : Combat entre deux personnages
 
-Cours 03:
+## Cours 03:
 - Surcharge des opérateurs
 - +, -, !=, ==
 - += (surcharge dans la classe)
 - Surcharge d'opérateur de flux <<
 
-Cours 04:
+## Cours 04:
 - Exercice sur fractions, mettant en oeuvre	
   la surcharge des opérateurs, toutes les 
   notions des cours 01, 02 et 03
