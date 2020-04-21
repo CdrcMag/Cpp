@@ -20,6 +20,7 @@ Cours 02:
 - Setters et Getters
 - Méthodes constantes
 - Imbrication d'objets (Un personnage a une arme)
+- Exercice : Combat entre deux personnages
 
 Cours 03:
 - Surcharge des opérateurs
