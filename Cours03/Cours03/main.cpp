@@ -8,6 +8,7 @@ using namespace std;
 //Prototypes
 void sauterLigne(int = 1);
 
+
 int main(void)
 {
 	cDuree duree1(3, 32, 50), duree2(12, 2, 21);
@@ -84,7 +85,7 @@ int main(void)
 }
 
 
-//Fonction pour sauter le nombre de ligne passé en paramètre. Défaut à 1 ligne (facultatif)
+//Fonction pour sauter le nombre de ligne(s) passée(s) en paramètre. Défaut à 1 ligne (facultatif)
 void sauterLigne(int a)
 {
 	for (int i = 0; i <= a; i++)
