@@ -27,3 +27,8 @@ Cours 03:
 - +, -, !=, ==
 - += (surcharge dans la classe)
 - Surcharge d'opérateur de flux <<
+
+Cours 04:
+- Exercice sur fractions, mettant en oeuvre	
+  la surcharge des opérateurs, toutes les 
+  notions des cours 01, 02 et 03

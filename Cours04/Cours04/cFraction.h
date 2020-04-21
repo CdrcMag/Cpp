@@ -38,3 +38,6 @@ public:
 ostream& operator<<(ostream&, cFraction const&);
 cFraction& operator+(cFraction const&, cFraction const&);
 cFraction& operator*(cFraction const&, cFraction const&);
+bool operator>(cFraction const&, cFraction const&);
+bool operator<(cFraction const&, cFraction const&);
+bool operator==(cFraction const&, cFraction const&);

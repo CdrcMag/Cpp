@@ -5,28 +5,14 @@ using namespace std;
 
 int main(void)
 {
-	
-	cFraction a(4, 5);      //Déclare une fraction valant 4/5
-	cFraction b(2);        //Déclare une fraction valant 2/1 (ce qui vaut 2)
-	cFraction c, d;         //Déclare deux fractions valant 0
 
-	cout << "a : " << a << endl;
-	cout << "b : " << b << endl;
-	
-	c = a + b;               //Calcule 4/5 + 2/1 = 14/5
+	cFraction a(4,5);
+	cFraction b(2);
+	cFraction c,d;        
 
-	//cout << "c : " << c << endl;
+	c = a + b;
 
-
-
-	/*
-	ZFraction a(4,5);      //Déclare une fraction valant 4/5
-	ZFraction b(2);        //Déclare une fraction valant 2/1 (ce qui vaut 2)
-	ZFraction c,d;         //Déclare deux fractions valant 0
-
-	c = a+b;               //Calcule 4/5 + 2/1 = 14/5
-
-	d = a*b;               //Calcule 4/5 * 2/1 = 8/5
+	d = a * b;
 
 	cout << a << " + " << b << " = " << c << endl;
 
@@ -38,11 +24,7 @@ int main(void)
 		cout << "a est egal a b." << endl;
 	else
 		cout << "a est plus petit que b." << endl;
-	*/
-
-
-
-
+	
 
 
 	system("pause");
