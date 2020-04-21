@@ -4,6 +4,8 @@
 
 using namespace std;
 
+
+
 class cDuree
 {
 private:
@@ -16,6 +18,7 @@ public:
 
 	//Méthodes
 	void afficher() const;
+	void display(ostream &flux) const;
 
 	//Setters
 	void setHeures(int);
@@ -27,6 +30,9 @@ public:
 	int getMinutes() const;
 	int getSecondes() const;
 
+	//Surcharges d'opérateur dans la classe
+	void operator+=(cDuree const& a);
+
 
 	//Constructeur(s) et destructeur
 	cDuree();
@@ -34,3 +40,13 @@ public:
 	~cDuree();
 };
 
+
+
+//Les surcharges d'opérateurs doivent être déclarer après la classe, dans le h les prototypes, et dans le .cpp l'implémentation de la métode
+
+//Surcharges
+bool operator==(cDuree const& a, cDuree const& b);
+bool operator!=(cDuree const& a, cDuree const& b);
+cDuree operator+(cDuree const& a, cDuree const& b);
+cDuree operator-(cDuree const& a, cDuree const& b);
+ostream& operator<<(ostream& flux, cDuree const& duree);

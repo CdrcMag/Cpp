@@ -1,7 +1,66 @@
 #include "cDuree.h"
 
+//--------- Surcharge des opérateurs -----------//
+bool operator==(cDuree const& a, cDuree const& b)
+{
+	if (a.getHeures() == b.getHeures() && a.getMinutes() == b.getMinutes() && a.getSecondes() == b.getSecondes())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 
+cDuree operator+(cDuree const& a, cDuree const& b)
+{
+	cDuree duree(a.getHeures() + b.getHeures(), a.getMinutes() + b.getMinutes(), a.getSecondes() + b.getSecondes());
 
+	return duree;
+}
+
+cDuree operator-(cDuree const& a, cDuree const& b)
+{
+	cDuree duree(a.getHeures() - b.getHeures(), a.getMinutes() - b.getMinutes(), a.getSecondes() - b.getSecondes());
+
+	return duree;
+}
+
+bool operator!=(cDuree const& a, cDuree const& b)
+{
+	if (a.getHeures() != b.getHeures() || a.getMinutes() != b.getMinutes() || a.getSecondes() != b.getSecondes())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+//Surcharge de l'opérateur += dans la classe, pour avoir accès aux membres ayant besoin d'être modifiés
+void cDuree::operator+=(cDuree const& a)
+{
+	this->m_heures += a.getHeures();
+	this->m_minutes += a.getMinutes();
+	this->m_secondes += a.getSecondes();
+}
+
+//Surcharge de l'opérateur de flux, pour pouvoir afficher avec cout << l'objet. On appelle la fonction display, qui modifie l'ostream, et l'opérateur le renvoie.
+ostream& operator<<(ostream &flux, cDuree const& duree)
+{
+	duree.display(flux);
+	return flux;
+}
+
+void cDuree::display(ostream &flux) const
+{
+	//flux est un surnom de cout, pour éviter les conflits
+	flux << m_heures << "h" << m_minutes << "m" << m_secondes << "s";
+}
+
+//----------------------------//
 cDuree::cDuree() : m_heures(0), m_minutes(0), m_secondes(0)
 {
 
