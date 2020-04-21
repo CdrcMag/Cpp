@@ -17,8 +17,8 @@ private:
 public:
 
 	//Méthodes
-	void afficher() const;
-	void display(ostream &flux) const;
+	void afficher() const;//permet l'affichage depuis cDuree.afficher()
+	void display(ostream &flux) const;//méthode utilisé par la surcharge d'opérateur <<
 
 	//Setters
 	void setHeures(int);
@@ -30,7 +30,7 @@ public:
 	int getMinutes() const;
 	int getSecondes() const;
 
-	//Surcharges d'opérateur dans la classe
+	//Surcharge d'opérateur dans la classe car besoin de modifier les attributs
 	void operator+=(cDuree const& a);
 
 
