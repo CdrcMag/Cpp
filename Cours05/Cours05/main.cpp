@@ -29,10 +29,17 @@ int main(void)
 	cout << "&pA (adresse du pointeur de a) : " << &pA << endl;
 	*/
 
+	/* Exo 2 : */
 
 
 
+
+
+
+	
 	/* Exo 1 : Créer deux tableaux, les éléments de 1 sont aléatoires, copier les éléments positifs de 1 dans 2, en remplaçant les trous par des 0*/
+
+	/*
 
 	//1. Créer les tableaux
 	int original[TAILLE];
@@ -52,6 +59,7 @@ int main(void)
 	//5. Afficher le 2ème tableau
 	AfficherTableau(rendu);
 
+	*/
 
 
 	system("pause");

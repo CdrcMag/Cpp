@@ -35,4 +35,4 @@
 
 ## Cours 05:
 - Exercices sur l'utilisation des pointeurs
-- a : copie des chiffres positifs d'un tableau a dans un tableau b
+- Exo 1 : copie des chiffres positifs d'un tableau a dans un tableau b
