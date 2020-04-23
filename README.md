@@ -32,3 +32,7 @@
 - Exercice sur fractions, mettant en oeuvre	
   la surcharge des opérateurs, toutes les 
   notions des cours 01, 02 et 03
+
+## Cours 05:
+- Exercices sur l'utilisation des pointeurs
+- a : copie des chiffres positifs d'un tableau a dans un tableau b
