@@ -35,4 +35,9 @@
 
 ## Cours 05:
 - Exercices sur l'utilisation des pointeurs
-- Exo 1 : copie des chiffres positifs d'un tableau a dans un tableau b
+- Exo : copie des chiffres positifs d'un tableau a dans un tableau b
+- Utilisation du constructeur par copie
+- Surcharge de l'opérateur =
+
+### Cours 06:
+- 
