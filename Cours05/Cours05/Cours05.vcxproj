@@ -115,11 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cArme.cpp" />
     <ClCompile Include="CopieDeTableaux.cpp" />
+    <ClCompile Include="cPersonnage.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cArme.h" />
     <ClInclude Include="CopieDeTableaux.h" />
+    <ClInclude Include="cPersonnage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
