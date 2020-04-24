@@ -1,5 +1,7 @@
 # Cours / révision c++
 
+https://www.markdownguide.org/basic-syntax/
+
 ## Cours 01 :
 - Input/Output
 - Types de base
@@ -50,4 +52,3 @@
 
 
 
-https://www.markdownguide.org/basic-syntax/
