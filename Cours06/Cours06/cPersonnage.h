@@ -8,7 +8,7 @@ using namespace std;
 class cPersonnage
 {
 
-private:
+protected:
 
 	string m_nom;
 	int m_vie;
@@ -18,6 +18,8 @@ public:
 	//Méthode(s)
 	void recevoirDegats(int);
 	void coupDePoing(cPersonnage&) const;
+
+	void sePresenter() const;
 
 
 	//Constructeur(s)

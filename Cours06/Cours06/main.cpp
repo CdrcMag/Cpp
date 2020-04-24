@@ -23,6 +23,22 @@ int main(void)
 
 	pPerso = pGuerrier; // On peut affecter un élément enfant à un élément parent.
 
+	//Lorsque l'on crée un objet enfant de classe, le compilateur appelle d'abord le constructeur par défaut
+	//de la classe mère, puis celui de l'enfant (et petit enfant, etc)
+
+	cGuerrier a;
+
+	//On peut passer en paramètres des informations à partir de l'enfant, il faut alors surcharger le constructeur du parent et de l'enfant
+
+	//les éléments en protected ne sont pas accessibles en dehors de la classe, sauf par des classes filles
+
+	//Le masquage : quand on écrit une fonction qui a le même nom que celle héritée de la classe mère, on parle de masquage.
+
+	cout << "----------------" << endl;
+	monPersonnage.sePresenter();
+	cout << "----------------" << endl;
+	monGuerrier.sePresenter();
+
 
 
 

@@ -51,7 +51,13 @@
 ## Cours 06:
 - L'héritage
 - Exercices sur l'héritage
-
+- Ordre d'appel des constructeurs
+- Passage de paramètres entre enfant et parent
+- protected
+- Le masquage
+- Utilisation d'opérateur de résolution de portée (::)
+- Utiliser méthode de classe mère dans classe fille
+- Gestion de l'architecture du code
 
 
 

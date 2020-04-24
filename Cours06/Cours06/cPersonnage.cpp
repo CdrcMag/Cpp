@@ -18,7 +18,11 @@ void cPersonnage::coupDePoing(cPersonnage& autre) const //const car elle ne chan
 	autre.recevoirDegats(10);
 }
 
-
+void cPersonnage::sePresenter() const
+{
+	cout << "Nom : " << m_nom << endl;
+	cout << "Vie : " << m_vie << endl;
+}
 
 
 
@@ -40,6 +44,7 @@ void cPersonnage::coupDePoing(cPersonnage& autre) const //const car elle ne chan
 //---------------------------------------------------------------------------------------//
 cPersonnage::cPersonnage() : m_nom("Jack"), m_vie(100)
 {
+	cout << "Appel du constructeur par defaut de cPersonnage." << endl;
 }
 
 //---------------------------------------------------------------------------------------//
