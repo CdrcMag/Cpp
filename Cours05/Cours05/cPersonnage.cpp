@@ -11,6 +11,8 @@ void cPersonnage::toString() const
 	cout << "------- Fiche de " << m_nom << " -------" << endl;
 	cout << "Vie : " << m_vie << endl;
 	cout << "Mana : " << m_mana << endl;
+	cout << "Arme : " << m_arme->getNom() << endl;
+	cout << "Degats : " << m_arme->getDegats() << endl;
 	cout << "---------------------" << endl;
 }
 
@@ -121,7 +123,8 @@ cPersonnage& cPersonnage::operator=(const cPersonnage& original)
 		m_arme = new cArme(*(original.m_arme));//On en crée un nouveau avec les valeurs de l'arme passée en objet
 	}
 
-	//this retourne l'adresse de l'object courant, *this retourne l'objet courant
+	//this est un pointeur sur l'objet courant, *this est une référence sur l'objet courant
+	//Donc this est l'adresse de l'objet courant, et *this c'est l'objet
 	return *this;
 }
 

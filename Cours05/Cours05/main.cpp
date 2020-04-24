@@ -12,25 +12,28 @@ using namespace std;
 
 int main(void)
 {
-
+	/* Exo sur le constructeur par copie et surcharge de l'opérateur = */
 
 	cPersonnage persoUn("Paul", 150, 300);
 	persoUn.getArme()->setNom("Massue");
 
 	cout << "Adresses de m_nom des deux personnages. Perso B est une copie de perso A. (constructeur par copie)" << endl;
-	cout << "Arme perso un : " << persoUn.getArme()->getNom() << " et a l'adresse " << &persoUn.getArme()->getNom() << endl;
+	cout << "Arme perso un : " << persoUn.getArme()->getNom() << " et a l'adresse " << &(persoUn.getArme()->getNom()) << endl;
 
 	//Utilisation du constructeur par copie
 	cPersonnage persoDeux(persoUn);
 
-	cout << "Arme perso deux : " << persoDeux.getArme()->getNom() << " et a l'adresse " << &persoDeux.getArme()->getNom() << endl;
+	cout << "Arme perso deux : " << persoDeux.getArme()->getNom() << " et a l'adresse " << &(persoDeux.getArme()->getNom()) << endl;
 
 	cPersonnage persoTrois;
 
-	//Utilisation de la surcharge d'opérateur =
+	//Utilisation de la surcharge d'opérateur =, il va de paire avec le constructeur par copie.
 	persoTrois = persoDeux;
-
 	persoTrois.toString();
+
+
+
+
 
 	
 	/*

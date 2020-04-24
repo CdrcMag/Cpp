@@ -38,6 +38,16 @@
 - Exo : copie des chiffres positifs d'un tableau a dans un tableau b
 - Utilisation du constructeur par copie
 - Surcharge de l'opérateur =
+- "this" et "* this"
 
-### Cours 06:
-- 
+## Cours 06:
+- L'héritage
+- Exercices sur l'héritage
+
+
+
+
+
+
+
+https://www.markdownguide.org/basic-syntax/
