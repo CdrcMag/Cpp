@@ -2,11 +2,11 @@
 
 ### Liens pratiques:
 
-https://www.markdownguide.org/basic-syntax/
-http://www.cplusplus.com/
-https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c
-https://fr.wikibooks.org/wiki/Programmation_C%2B%2B/Les_pointeurs
-https://www.exelib.net/exercices/programmation/langage-cpp/
+- https://www.markdownguide.org/basic-syntax/
+- http://www.cplusplus.com/
+- https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c
+- https://fr.wikibooks.org/wiki/Programmation_C%2B%2B/Les_pointeurs
+- https://www.exelib.net/exercices/programmation/langage-cpp/
 
 ## Cours 01 :
 - Input/Output
