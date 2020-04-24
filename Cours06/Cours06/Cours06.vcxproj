@@ -115,7 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cGuerrier.cpp" />
+    <ClCompile Include="cMagicien.cpp" />
+    <ClCompile Include="cPersonnage.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cGuerrier.h" />
+    <ClInclude Include="cMagicien.h" />
+    <ClInclude Include="cPersonnage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
