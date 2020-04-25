@@ -66,3 +66,6 @@
 - Résolution dynamique des liens
 - Besoins : virtual + référence/pointeur
 - Destructeurs virtuels
+- Méthodes virtuelles pures
+- Classes abstraites
+- Notes sur le polymorphisme

@@ -115,12 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cCamion.cpp" />
     <ClCompile Include="cMoto.cpp" />
     <ClCompile Include="cVehicule.cpp" />
     <ClCompile Include="cVoiture.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cCamion.h" />
     <ClInclude Include="cMoto.h" />
     <ClInclude Include="cVehicule.h" />
     <ClInclude Include="cVoiture.h" />

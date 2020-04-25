@@ -12,7 +12,7 @@ public:
 
 	//Virtual uniquement dans le .h
 	virtual void afficher() const;
-
+	virtual int nbrRoues() const;
 	//Getters
 	double getVitesse() const;
 

@@ -18,11 +18,18 @@ void cVoiture::afficher() const
 	cout << "Ceci est une voiture qui coute " << m_prix << " et a " << m_portes << " portes." << endl;
 }
 
-
-
-
-cVoiture::cVoiture() : m_portes(0)
+int cVoiture::nbrRoues() const
 {
+	//
+	return 4;
+}
+
+
+
+
+cVoiture::cVoiture() : cVehicule(), m_portes(0)
+{
+
 }
 
 cVoiture::cVoiture(int prix, int portes)  : cVehicule(prix), m_portes(portes)

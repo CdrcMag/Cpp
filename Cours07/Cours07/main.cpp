@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "cVehicule.h"
 #include "cMoto.h"
@@ -10,8 +11,42 @@ using namespace std;
 //Prototypes
 void sePresenter(const cVehicule&);
 
+/*
+	Notes :
+	- Le polymorphisme permet de manipuler des objets d'une classe enfant, via des pointeurs/références d'une classe mère. (ex: sePresenter())
+	- Obligatoire : Méthode virtuelle, et pointeur ou référence sur l'objet
+	- Une classe possédant une méthode virtuelle pure, est appelée une classe abstraite. Elle n'est pas instanciable.
+	- Une méthode virtuelle peut être redéfinie dans une classe enfant.
+	- Une méthode virtuelle pure doit être redéfinie dans toutes les classes enfants.
+	- Une méthode virtuelle pure est utilisée quand on ne peut rien mettre dans le corps d'une méthode de celle ci.
+*/
+
 int main(void)
 {
+	
+	//Création d'une collection hétérogène, techniquement, elle contient plusieurs types. (héritage)
+	vector<cVehicule*> listeVehicules;//liste de pointeurs de véhicule
+
+	//Création de véhicules dans la liste
+	listeVehicules.push_back(new cVoiture(15000, 3));
+	listeVehicules.push_back(new cVoiture(12000, 5));
+	listeVehicules.push_back(new cMoto(8000, 215.5));
+
+
+
+	listeVehicules[2]->afficher();
+
+	cout << listeVehicules[2]->getAnnee() << endl;
+
+
+
+	for (int i = 0; i < listeVehicules.size(); i++)
+	{
+		delete listeVehicules[i];//Libération de la case mémoire allouée
+		listeVehicules[i] = 0;//Reinitialisation du pointeur 
+	}
+
+
 
 	/*
 	cVehicule v;
@@ -42,6 +77,7 @@ int main(void)
 	system("pause");
 	return 0;
 }
+
 
 
 //void sePresenter(cVehicule v)//Résolution statique des liens. Son type determine quelle fonction membre appeler, et non sa vraie nature.

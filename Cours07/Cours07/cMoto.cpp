@@ -3,7 +3,7 @@
 
 void cMoto::afficher() const
 {
-	cout << "Ceci est une moto a " << m_prix << " et a une vitesse de " << m_vitesse << endl;
+	cout << "Ceci est une moto a " << m_prix << "euros, et a une vitesse de " << m_vitesse << "km/h" << endl;
 }
 
 double cMoto::getVitesse() const
@@ -16,9 +16,13 @@ void cMoto::setVitesse(double vitesse)
 	this->m_vitesse = vitesse;
 }
 
+int cMoto::nbrRoues() const
+{
+	return 2;
+}
 
 
-cMoto::cMoto() : m_vitesse(0)
+cMoto::cMoto() : cVehicule(), m_vitesse(0)
 {
 }
 
