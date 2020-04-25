@@ -61,3 +61,8 @@
 
 ## Cours 07:
 - Le polymorphisme
+- Les méthodes virtuelles
+- Résolution statique des liens
+- Résolution dynamique des liens
+- Besoins : virtual + référence/pointeur
+- Destructeurs virtuels

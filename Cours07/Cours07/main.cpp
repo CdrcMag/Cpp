@@ -13,25 +13,6 @@ void sePresenter(const cVehicule&);
 int main(void)
 {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/*
 	cVehicule v;
 	sePresenter(v);
