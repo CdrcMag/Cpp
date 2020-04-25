@@ -59,8 +59,5 @@
 - Utiliser méthode de classe mère dans classe fille
 - Gestion de l'architecture du code
 
-
-
-
-
-
+## Cours 07:
+- Le polymorphisme
