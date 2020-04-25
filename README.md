@@ -7,6 +7,7 @@
 - https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c
 - https://fr.wikibooks.org/wiki/Programmation_C%2B%2B/Les_pointeurs
 - https://www.exelib.net/exercices/programmation/langage-cpp/
+- https://waytolearnx.com/2019/09/qcm-sur-cpp-partie-1.html
 
 ## Cours 01 :
 - Input/Output
