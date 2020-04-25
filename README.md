@@ -68,4 +68,4 @@
 - Destructeurs virtuels
 - Méthodes virtuelles pures
 - Classes abstraites
-- Notes sur le polymorphisme
+- Notes sur le polymorphisme (https://bit.ly/2VUTi1q)
