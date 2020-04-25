@@ -70,3 +70,9 @@
 - Méthodes virtuelles pures
 - Classes abstraites
 - Notes sur le polymorphisme (https://bit.ly/2VUTi1q)
+
+## Cours 08:
+- Membres statiques d'une classe
+- Amitié
+- Les fonctions amies
+- Exemples
