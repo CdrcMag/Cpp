@@ -12,13 +12,13 @@ using namespace std;
 void sePresenter(const cVehicule&);
 
 /*
-	Notes :
-	- Le polymorphisme permet de manipuler des objets d'une classe enfant, via des pointeurs/références d'une classe mère. (ex: sePresenter())
-	- Obligatoire : Méthode virtuelle, et pointeur ou référence sur l'objet
-	- Une classe possédant une méthode virtuelle pure, est appelée une classe abstraite. Elle n'est pas instanciable.
-	- Une méthode virtuelle peut être redéfinie dans une classe enfant.
-	- Une méthode virtuelle pure doit être redéfinie dans toutes les classes enfants.
-	- Une méthode virtuelle pure est utilisée quand on ne peut rien mettre dans le corps d'une méthode de celle ci.
+Notes :
+- Le polymorphisme permet de manipuler des objets d'une classe enfant, via des pointeurs/références d'une classe mère. (ex: sePresenter())
+- Obligatoire : Méthode virtuelle, et pointeur ou référence sur l'objet
+- Une classe possédant une méthode virtuelle pure, est appelée une classe abstraite. Elle n'est pas instanciable.
+- Une méthode virtuelle peut être redéfinie dans une classe enfant.
+- Une méthode virtuelle pure doit être redéfinie dans toutes les classes enfants.
+- Une méthode virtuelle pure est utilisée quand on ne peut rien mettre dans le corps d'une méthode de celle ci.
 */
 
 int main(void)
