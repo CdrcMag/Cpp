@@ -25,7 +25,7 @@ int main(void)
 	Afficher(*pJeuB);
 	Afficher(*pJeuC);
 
-	//Désallouage des variables
+	//Désallocation des variables
 	delete pJeuA;
 	delete pJeuB;
 	delete pJeuC;
