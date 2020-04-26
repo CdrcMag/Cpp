@@ -1,7 +1,7 @@
 #include "cFPS.h"
 
 
-
+//Méthode virtuelle héritée
 void cFPS::sePresenter() const
 {
 	cJeu::sePresenter();
@@ -10,12 +10,13 @@ void cFPS::sePresenter() const
 
 
 
+//Constructeur
 cFPS::cFPS() : cJeu("FPS"), m_place(nbr_Instance)
 {
 
 }
 
-
+//Destructeur
 cFPS::~cFPS()
 {
 }

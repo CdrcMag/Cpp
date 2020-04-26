@@ -14,7 +14,10 @@ public:
 	//Méthode d'affichage (utilisant le masquage)
 	void sePresenter() const;
 
+	//Constructeur
 	cFPS();
+
+	//Destructeur
 	~cFPS();
 };
 

@@ -6,6 +6,7 @@ class cRPG : public cJeu
 {
 private:
 
+	//Représente la place
 	int m_place;
 
 public:
