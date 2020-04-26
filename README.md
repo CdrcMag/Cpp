@@ -76,3 +76,10 @@
 - Amitié
 - Les fonctions amies
 - Exemples
+
+## Exam D31.2
+- Création des classes cJeu, cFPS, cHorror, cRPG
+- Héritage
+- Utilisation d'une variable statique
+- Fonction Afficher(const cJeu&) utilisant le polymorphisme
+- Libération de la mémoire
