@@ -1,0 +1,20 @@
+﻿'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Users\cedri\Desktop\C++\Cours\Cpp\Exam_D31.2 v2\Debug\Exam_D31.2 v2.exe'. Les symboles ont été chargés.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\ntdll.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\kernel32.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\KernelBase.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\msvcp140d.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\vcruntime140d.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\vcruntime140d.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Déchargé 'C:\Windows\SysWOW64\vcruntime140d.dll'
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\ucrtbased.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\sechost.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\rpcrt4.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\sspicli.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\cryptbase.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\bcryptprimitives.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\kernel.appcore.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+'Exam_D31.2 v2.exe' (Win32) : Chargé 'C:\Windows\SysWOW64\msvcrt.dll'. Impossible de trouver ou d'ouvrir le fichier PDB.
+Le thread 0x3854 s'est arrêté avec le code 0 (0x0).
+Le thread 0xc30 s'est arrêté avec le code 0 (0x0).
+Le thread 0x28c4 s'est arrêté avec le code 0 (0x0).
+Le programme '[17928] Exam_D31.2 v2.exe' s'est arrêté avec le code 0 (0x0).

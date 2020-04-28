@@ -8,31 +8,43 @@ class cJeu;//forward declaration
 #include "cRPG.h"
 #include "cFPS.h"
 
-
 using namespace std;
 
 //Prototypes
 void afficher(const cJeu&);
+void afficherTotalObjet();
 
 int main(void)
 {
 	//Déclaration des objets
+	cout << "-- Creation des objets. --" << endl;
 	cHorror *a = new cHorror();
 	cRPG *b = new cRPG();
 	cFPS *c = new cFPS();
 
+	//Affiche le nombre total d'objets
+	afficherTotalObjet();
+	cout << endl;
+
 	//Affichage des objets 
+	cout << "-- Affichage des objets. --" << endl;
 	afficher(*a);
 	afficher(*b);
 	afficher(*c);
+	cout << endl;
 
 	//Désallocation des pointeurs
+	cout << "-- Suppression des objets. --" << endl;
 	delete a;
 	delete b;
 	delete c;
 	a = nullptr;
 	b = nullptr;
 	c = nullptr;
+
+
+	//Affiche le nombre total d'objets
+	afficherTotalObjet();
 
 	cout << endl;
 	system("pause");
@@ -43,4 +55,10 @@ int main(void)
 void afficher(const cJeu& jeu)
 {
 	jeu.sePresenter();
+}
+
+//Méthode affichant le total d'objets
+void afficherTotalObjet()
+{
+	cout << "Il y a " << cJeu::getTotalInstance() << " objet(s) en ce moment." << endl;
 }
