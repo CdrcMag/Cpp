@@ -83,3 +83,12 @@
 - Utilisation d'une variable statique
 - Fonction Afficher(const cJeu&) utilisant le polymorphisme
 - Libération de la mémoire
+
+## Exam D31.2v2
+- Correction de D31.2
+- Changements dans cJeu
+- Incrémentation dans enfants
+- Autres
+
+## TP_POO_Cpp
+- 
