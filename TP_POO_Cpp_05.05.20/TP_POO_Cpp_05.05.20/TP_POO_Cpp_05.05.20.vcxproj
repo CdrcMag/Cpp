@@ -116,15 +116,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cCarre.cpp" />
+    <ClCompile Include="cCercle.cpp" />
     <ClCompile Include="cCube.cpp" />
     <ClCompile Include="cFigure.cpp" />
+    <ClCompile Include="cParallelepipede.cpp" />
+    <ClCompile Include="cRectangle.cpp" />
+    <ClCompile Include="cSphere.cpp" />
     <ClCompile Include="cTriangle.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cCarre.h" />
+    <ClInclude Include="cCercle.h" />
     <ClInclude Include="cCube.h" />
     <ClInclude Include="cFigure.h" />
+    <ClInclude Include="cParallelepipede.h" />
+    <ClInclude Include="cRectangle.h" />
+    <ClInclude Include="cSphere.h" />
     <ClInclude Include="cTriangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

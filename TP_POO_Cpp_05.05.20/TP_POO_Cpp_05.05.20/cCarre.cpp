@@ -38,7 +38,6 @@ string cCarre::description(t_desc type) const
 		strDesc = "\n# # # Carre # # #\n#\n" +
 			strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
 		strDesc += "# Particularites : \n#\t Largeur : " + to_string(m_dbllargeur) + "\n#\n";
-
 		strDesc += "# # # # # # # # # # #\n";
 	}
 	else
@@ -52,11 +51,7 @@ string cCarre::description(t_desc type) const
 
 string cCarre::toString() const
 {
-	string strDesc = "\n# # # Carre # # #\n#\n" +
-		strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
-	strDesc += "# Particularites : \n#\t Largeur : " + to_string(m_dbllargeur) + "\n#\n";
-
-	strDesc += "# # # # # # # # # # #\n";
+	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_dbllargeur);
 
 	return strDesc;
 }

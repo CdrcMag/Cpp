@@ -2,22 +2,22 @@
 
 #include "cFigure.h"
 
-class cCarre : public cFigure
+class cRectangle : public cFigure
 {
 
 protected:
 
-	double m_dbllargeur;
+	double m_longueur;
+	double m_largeur;
 
 
 public:
-	
+
 	//Constructeur
-	//Largeur, posX, posY
-	cCarre(double largeur, double = 0, double = 0);
+	cRectangle(double, double, double = 0, double = 0);
 
 	//Destructeur
-	virtual ~cCarre();
+	virtual ~cRectangle();
 
 	//Méthodes
 	double perimetre() const;

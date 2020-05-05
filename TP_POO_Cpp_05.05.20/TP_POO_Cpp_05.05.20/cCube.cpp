@@ -13,11 +13,6 @@ cCube::~cCube()
 }
 
 
-//Retourne l'aire d'une face
-double cCube::aire() const 
-{
-	return m_dbllargeur * m_dbllargeur;
-}
 
 //Retourne le volume du cube
 double cCube::volume() const
@@ -25,22 +20,9 @@ double cCube::volume() const
 	return m_dbllargeur * m_dbllargeur * m_dbllargeur;
 }
 
-//Retourne le périmètre (valeur de totale des bords)
-double cCube::perimetre() const
+double cCube::aire() const
 {
-	return m_dbllargeur * 12;
-}
-
-//Retourne une chaine avec une description en détail
-string cCube::toString() const
-{
-	string strDescr = "\n# # # Cube # # #\n#\n" +
-		strDescr += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
-	strDescr += "# Particularites : \n#\t Largeur : " + to_string(m_dbllargeur) + "\n#\n";
-
-	strDescr += "# # # # # # # # # # #\n";
-
-	return strDescr;
+	return m_dbllargeur * m_dbllargeur * m_dbllargeur;
 }
 
 
@@ -68,3 +50,10 @@ string cCube::description(t_desc type) const
 	return strDesc;
 }
 
+//Retourne une chaine avec une description en détail
+string cCube::toString() const
+{
+	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_dbllargeur);
+
+	return strDesc;
+}

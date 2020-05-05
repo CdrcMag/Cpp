@@ -2,22 +2,19 @@
 
 #include "cFigure.h"
 
-class cCarre : public cFigure
+const double PI = 3.141592653589793238462643383279502884;
+
+class cCercle : public cFigure
 {
+
 
 protected:
 
-	double m_dbllargeur;
-
+	double m_rayon;
 
 public:
-	
-	//Constructeur
-	//Largeur, posX, posY
-	cCarre(double largeur, double = 0, double = 0);
-
-	//Destructeur
-	virtual ~cCarre();
+	cCercle(double, double = 0, double = 0);
+	~cCercle();
 
 	//Méthodes
 	double perimetre() const;

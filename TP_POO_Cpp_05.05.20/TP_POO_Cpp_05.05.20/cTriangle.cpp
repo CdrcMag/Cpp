@@ -41,7 +41,6 @@ string cTriangle::description(t_desc type) const
 		strDesc = "# # # Triangle # # #\n#\n" +
 		strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
 		strDesc += "# Particularites : \n#\t Base : " + to_string(m_dblbase) + "\n#\t Hauteur : " + to_string(m_dblhauteur) + "\n#\n";
-		
 		strDesc += "# # # # # # # # # # #\n";
 	}
 	else
@@ -55,11 +54,7 @@ string cTriangle::description(t_desc type) const
 //Retourne une chaine contenant une description du triangle
 string cTriangle::toString() const
 {
-	string strDesc = "# # # Triangle # # #\n#\n" +
-	strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
-	strDesc += "# Particularites : \n#\t Base : " + to_string(m_dblbase) + "\n#\t Hauteur : " + to_string(m_dblhauteur) + "\n#\n";
-
-	strDesc += "# # # # # # # # # # #";
+	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_dblbase) + " " + to_string(m_dblhauteur);
 
 	return strDesc;
 }
