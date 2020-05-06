@@ -13,7 +13,6 @@ protected:
 public:
 	
 	//Constructeur
-	//Largeur, posX, posY
 	cCarre(double largeur, double = 0, double = 0);
 
 	//Destructeur

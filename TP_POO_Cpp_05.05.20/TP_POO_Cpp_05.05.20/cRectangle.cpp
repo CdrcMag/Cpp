@@ -1,7 +1,18 @@
 #include "cRectangle.h"
 
 
-
+//-------------------------
+//
+//	Constructeur
+//
+//	Appel du constructeur de cFigure
+//
+//	Arguments :
+//	longueur, largeur
+//	
+//	Facultatif : posX, posY
+//
+//-------------------------
 cRectangle::cRectangle(double longueur, double largeur, double x, double y) : cFigure(x, y, 0), m_longueur(longueur), m_largeur(largeur)
 {
 }
@@ -34,7 +45,7 @@ string cRectangle::description(t_desc type) const
 	else if (type == longue)
 	{
 		strDesc = "\n# # # Rectangle # # #\n#\n" +
-			strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
+		strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
 		strDesc += "# Particularites : \n#\t Longueur : " + to_string(m_longueur) + "\n#\t Largeur : " + to_string(m_largeur) + "\n#\n";
 		strDesc += "# # # # # # # # # # #\n";
 	}

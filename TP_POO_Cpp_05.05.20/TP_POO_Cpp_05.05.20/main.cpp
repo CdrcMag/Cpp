@@ -3,6 +3,7 @@
 #include <list>
 #include <fstream>
 
+//Forward déclaration de cFigure
 class cFigure;
 
 #include "cTriangle.h"
@@ -14,10 +15,6 @@ class cFigure;
 #include "cParallelepipede.h"
 
 using namespace std;
-
-//Prototypes
-void afficherAire(const cFigure&);
-void afficherVolume(const cFigure&);
 
 /*
 	Notes : 
@@ -106,6 +103,7 @@ int main(void)
 	//Chaine pour manipuler la réception de figures
 	string strFigure;
 
+	//Variables qui prendront les valeurs à afficher dans la console et le fichier
 	int n_x;
 	int n_y;
 	int n_z;
@@ -118,7 +116,7 @@ int main(void)
 	double dx;
 	double dy;
 
-
+	//Ajoute à la liste de figures, toutes les figures créées
 	liste.push_back(&triangle);
 	liste.push_back(&carre); 
 	liste.push_back(&rectangle); 
@@ -152,6 +150,8 @@ int main(void)
 	//Stocke le contenu du fichier dans une chaine
 	*fichier >> strFigure;
 
+	//Tant que la fin du fichier n'est pas atteinte, vérifie chaque ligne, en fonction de son en-tête il
+	//retourne dans la console les données xyz, puis celles correspondantes à la figure.
 	while (!fichier->eof())
 	{
 		*fichier >> n_x >> n_y >> n_z; 
@@ -190,28 +190,19 @@ int main(void)
 			*fichier >> dbl_rayon; cout << dbl_rayon << endl;
 		}
 
+		//Si retour à la ligne, alors strFigure prend nouvelle valeur
 		while (fichier->get() != '\n');
 		*fichier >> strFigure;
 
 		
 	}
 	
+	//Ferme le fichier et désalloue le pointeur
 	fichier->close();
 	delete fichier;
 		
 	cout << endl;
 	system("pause");
 	return 0;
-}
-
-
-void afficherAire(const cFigure &fig)
-{
-	cout << to_string(fig.aire()) << endl;
-}
-
-void afficherVolume(const cFigure &fig)
-{
-	cout << to_string(fig.volume()) << endl;
 }
 

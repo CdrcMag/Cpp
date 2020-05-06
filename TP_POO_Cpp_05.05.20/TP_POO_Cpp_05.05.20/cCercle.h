@@ -19,7 +19,7 @@ public:
 	//Méthodes
 	double perimetre() const;
 	double aire() const;
-	double volume() const { return 0; }
+	double volume() const { return 0; }//Méthode non-utilisée dans cercle
 	string description(t_desc type) const;
 	string toString() const;
 };

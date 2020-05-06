@@ -2,24 +2,36 @@
 
 
 
-//Base, hauteur, posX, posY
+//-------------------------
+//
+//	Constructeur
+//
+//	Appel du constructeur de figure
+//
+//	Arguments :
+//	base, hauteur
+//	
+//	Facultatif : posX, posY
+//
+//-------------------------
 cTriangle::cTriangle(double base, double hauteur, double x, double y) : cFigure(x, y, 0), m_dblbase(base), m_dblhauteur(hauteur)
 {
-	//Appel le constructeur de cFigure et lui donne la position de la figure, puis sa base et hauteur
+	
 }
 
-
+//Destructeur
 cTriangle::~cTriangle()
 {
 }
 
-
+//Retourne le périmètre du triangle
 double cTriangle::perimetre() const
 {
 	//Retourne RacineDe[(base*2 + hauteur *2) + (base + hauteur)]
 	return sqrt(m_dblbase * m_dblbase + m_dblhauteur * m_dblhauteur) + m_dblbase + m_dblhauteur;
 }
 
+//Retourne l'aire du triangle
 double cTriangle::aire() const
 {
 	//Retourne (base * hauteur) / 2

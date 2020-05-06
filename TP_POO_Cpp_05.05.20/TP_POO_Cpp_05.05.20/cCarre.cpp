@@ -1,7 +1,18 @@
 #include "cCarre.h"
 
 
-//Constructeur
+//-------------------------
+//
+//	Constructeur
+//
+//	Appel du constructeur de figure
+//
+//	Arguments :
+//	largeur
+//	
+//	Facultatif : posX, posY
+//
+//-------------------------
 cCarre::cCarre(double largeur, double x, double y) : cFigure(x, y, 0), m_dbllargeur(largeur)
 {
 
@@ -13,12 +24,13 @@ cCarre::~cCarre()
 }
 
 
-//Méthodes 
+//Retourne le périmètre du carré
 double cCarre::perimetre() const
 {
 	return m_dbllargeur * 4;
 }
 
+//Retourne l'aire du carré
 double cCarre::aire() const
 {
 	return m_dbllargeur * m_dbllargeur;
@@ -36,7 +48,7 @@ string cCarre::description(t_desc type) const
 	else if (type == longue)
 	{
 		strDesc = "\n# # # Carre # # #\n#\n" +
-			strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
+		strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
 		strDesc += "# Particularites : \n#\t Largeur : " + to_string(m_dbllargeur) + "\n#\n";
 		strDesc += "# # # # # # # # # # #\n";
 	}
@@ -48,7 +60,7 @@ string cCarre::description(t_desc type) const
 	return strDesc;
 }
 
-
+//Retourne une chaine contenant une description du triangle
 string cCarre::toString() const
 {
 	ostringstream oss;

@@ -13,7 +13,7 @@ public:
 	~cCube();
 
 	//Méthodes
-	double perimetre() const {return 0;}
+	double perimetre() const {return 0;}//Méthode non-utilisée dans cube
 	double aire() const;
 	double volume() const;
 	string description(t_desc type) const;

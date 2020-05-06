@@ -19,7 +19,7 @@ public:
 
 	double volume() const;
 	double aire() const;
-	double perimetre() const { return 0; }
+	double perimetre() const { return 0; }//Méthode non-utilisée dans parallelepipede
 	string description(t_desc type) const;
 	string toString() const;
 };

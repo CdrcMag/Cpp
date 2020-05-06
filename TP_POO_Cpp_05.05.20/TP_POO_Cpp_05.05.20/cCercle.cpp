@@ -2,7 +2,18 @@
 
 
 
-
+//-------------------------
+//
+//	Constructeur
+//
+//	Appel du constructeur de cFigure
+//
+//	Arguments :
+//	rayon
+//	
+//	Facultatif : posX, posY
+//
+//-------------------------
 cCercle::cCercle(double rayon, double x, double y) : cFigure(x, y), m_rayon(rayon)
 {
 
@@ -36,7 +47,7 @@ string cCercle::description(t_desc type) const
 	else if (type == longue)
 	{
 		strDesc = "\n# # # Cercle # # #\n#\n" +
-			strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
+		strDesc += "# Position : \n#\t x : " + to_string(m_x) + "\n#\t y : " + to_string(m_y) + "\n#\n";
 		strDesc += "# Particularites : \n#\t Rayon : " + to_string(m_rayon) + "\n#\n";
 		strDesc += "# # # # # # # # # # #\n";
 	}
