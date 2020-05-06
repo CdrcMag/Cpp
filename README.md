@@ -91,4 +91,10 @@
 - Autres
 
 ## TP_POO_Cpp
-- 
+- Création de classe mère cFigure
+- Création des classes enfants (cCarre, cTriangle, cSphere, etc)
+- main.cpp 
+- Création des figures
+- Insertion de ces figures dans une liste
+- Ecriture dans un fichier du nom et des caractéristiques de chaque figure
+- Lecture depuis le fichier, et retour dans la console. 
