@@ -51,7 +51,7 @@ string cCercle::description(t_desc type) const
 
 string cCercle::toString() const
 {
-	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_rayon);
-
-	return strDesc;
+	ostringstream oss;
+	oss << m_rayon;
+	return cFigure::toString() + " " + oss.str();
 }

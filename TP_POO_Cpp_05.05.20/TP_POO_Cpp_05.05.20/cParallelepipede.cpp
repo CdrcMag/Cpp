@@ -48,8 +48,7 @@ string cParallelepipede::description(t_desc type) const
 
 string cParallelepipede::toString() const
 {
-	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_longueur) + " " + to_string(m_largeur) + +" " + to_string(m_hauteur);
- 
-
-	return strDesc;
+	ostringstream oss;
+	oss << m_largeur << " " << m_longueur << " " << m_hauteur << " " << m_dx << " " << m_dy;
+	return cFigure::toString() + " " + oss.str();
 }

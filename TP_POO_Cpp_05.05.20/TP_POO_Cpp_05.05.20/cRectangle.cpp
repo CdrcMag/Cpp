@@ -48,7 +48,7 @@ string cRectangle::description(t_desc type) const
 
 string cRectangle::toString() const
 {
-	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_longueur) + " " + to_string(m_largeur);
-
-	return strDesc;
+	ostringstream oss;
+	oss << m_longueur << " " << m_largeur;
+	return cFigure::toString() + " " + oss.str();
 }

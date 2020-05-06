@@ -90,40 +90,115 @@ int main(void)
 	cout << "Perimetre = " << sphere.perimetre() << endl;
 	cout << "Aire = " << sphere.aire() << endl;
 	cout << "Volume = " << sphere.volume() << endl << endl;
+	   
+	//Représente une figure
+	cFigure *fig;
+
+	//Liste de figures
+	list<cFigure *> liste; 
+
+	//Itérateur qui permet de parcourir la liste
+	list<cFigure *>::iterator iL; 
+	
+	//Fichier
+	fstream *fichier = nullptr; 
+
+	//Chaine pour manipuler la réception de figures
+	string strFigure;
+
+	int n_x;
+	int n_y;
+	int n_z;
+
+	double dbl_base;
+	double dbl_hauteur;
+	double dbl_largeur;
+	double dbl_longueur;
+	double dbl_rayon;
+	double dx;
+	double dy;
 
 
+	liste.push_back(&triangle);
+	liste.push_back(&carre); 
+	liste.push_back(&rectangle); 
+	liste.push_back(&cercle); 
+	liste.push_back(&cube); 
+	liste.push_back(&parallelepipede); 
+	liste.push_back(&sphere);
 
-	//cFigure *cFig;
+	//Ouvre un fichier
+	fichier = new fstream("Figures.txt", fstream::out);
 
-	//cFigure *fig; list<cFigure *> liste; 
-	//list<cFigure *>::iterator iL; 
-	//
-	//fstream *fichier = NULL; string strFigure;
+	//Tant que l'itérateur n'a pas atteint la fin de la liste
+	for (iL = liste.begin(); iL != liste.end(); iL++)
+	{
+		//fig prend la figure a l'index de la liste iL
+		fig = *iL;
 
-	//int n_x;
-	//int n_y;
-	//int n_z;
+		//Ecrit dans le fichier le nom de la figure, ainsi que ses valeurs
+		*fichier << fig->description(courte) << " " << fig->toString() << endl;
+	}
 
-	//double dbl_base;
-	//double dbl_hauteur;
-	//double dbl_largeur;
-	//double dbl_longueur;
-	//double dbl_rayon;
-	//double dx;
-	//double dy;
+	//Ferme le fichier
+	fichier->close();
 
+	//Déréférence le pointeur de fichier
+	delete fichier;
 
-	//liste.push_back(&triangle);
-	//liste.push_back(&carre); 
-	//liste.push_back(&rectangle); 
-	//liste.push_back(&cercle); 
-	//liste.push_back(&cube); 
-	//liste.push_back(&parallelepipede); 
-	//liste.push_back(&sphere);
+	//Ouvre à nouveau ce fichier
+	fichier = new fstream("Figures.txt", fstream::in);
 
+	//Stocke le contenu du fichier dans une chaine
+	*fichier >> strFigure;
 
+	while (!fichier->eof())
+	{
+		*fichier >> n_x >> n_y >> n_z; 
+		cout << strFigure;
+		cout << " " << n_x << " " << n_y << " " << n_z;
+		if (strFigure == "Figure") cout << endl;
+		if (strFigure == "Triangle")
+		{
+			*fichier >> dbl_base >> dbl_hauteur;
+			cout << " " << dbl_base << " " << dbl_hauteur << endl;
+		}
+		if (strFigure == "Carre")
+		{
+			*fichier >> dbl_largeur;
+			cout << " " << dbl_largeur << endl;
+		}
+		if (strFigure == "Rectangle")
+		{
+			*fichier >> dbl_largeur >> dbl_longueur; cout << dbl_largeur << dbl_longueur << endl;
+		}
+		if (strFigure == "Cercle")
+		{
+			*fichier >> dbl_rayon; cout << dbl_rayon << endl;
+		}
+		if (strFigure == "Cube")
+		{
+			*fichier >> dbl_largeur; cout << dbl_largeur << endl;
+		}
+		if (strFigure == "Parallelepipede")
+		{
+			*fichier >> dbl_largeur >> dbl_longueur >> dbl_hauteur >> dx >> dy;
+			cout << dbl_largeur << dbl_longueur << dbl_hauteur << dx << dy << endl;
+		}
+		if (strFigure == "Sphere")
+		{
+			*fichier >> dbl_rayon; cout << dbl_rayon << endl;
+		}
 
+		while (fichier->get() != '\n');
+		*fichier >> strFigure;
 
+		
+	}
+	
+	fichier->close();
+	delete fichier;
+		
 	cout << endl;
 	system("pause");
 	return 0;

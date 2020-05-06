@@ -51,7 +51,7 @@ string cCarre::description(t_desc type) const
 
 string cCarre::toString() const
 {
-	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_dbllargeur);
-
-	return strDesc;
+	ostringstream oss;
+	oss << m_dbllargeur;
+	return cFigure::toString() + " " + oss.str();
 }

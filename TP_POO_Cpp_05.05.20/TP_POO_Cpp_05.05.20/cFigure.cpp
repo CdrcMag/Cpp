@@ -15,11 +15,8 @@ cFigure::~cFigure()
 
 string cFigure::toString() const
 {
-	string chaine = "";
+	ostringstream oss;
+	oss << m_x << " " << m_y << " " << m_z;
+	return oss.str();
 
-	chaine += "X : " + to_string(m_x);
-	chaine += " / Y : " + to_string(m_y);
-	chaine += " / Z : " + to_string(m_z);
-
-	return chaine;
 }

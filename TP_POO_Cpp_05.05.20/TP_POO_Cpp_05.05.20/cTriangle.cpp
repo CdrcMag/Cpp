@@ -54,7 +54,7 @@ string cTriangle::description(t_desc type) const
 //Retourne une chaine contenant une description du triangle
 string cTriangle::toString() const
 {
-	string strDesc = to_string(m_x) + " " + to_string(m_y) + " " + to_string(m_z) + " " + to_string(m_dblbase) + " " + to_string(m_dblhauteur);
-
-	return strDesc;
+	ostringstream oss;
+	oss << m_dblbase << " " << m_dblhauteur;
+	return cFigure::toString() + " " + oss.str();
 }
